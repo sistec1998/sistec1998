@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Electrónica Panamericana</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #f1f2f6, #dfe6e9);
+            color: #2d3436;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            width: 200px;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            color: #2d3436;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #0984e3;
+        }
+
+        h1, h2 {
+            margin-top: 20px;
+            color: #0984e3;
+            transition: color 0.3s ease;
+        }
+
+        h1:hover, h2:hover {
+            color: #6c5ce7;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: #b2bec3;
+            width: 60%;
+            margin: 30px auto;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0984e3;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #74b9ff;
+        }
+
+        ol {
+            list-style: decimal inside;
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="logo.png" width="200" alt="Logo Electrónica Panamericana">
+    <br><br>
+
+    <nav>
+        <a href="pagina1.html"><i class="fas fa-box-open"></i> Producto</a>
+        <a href="pagina2.html"><i class="fas fa-shopping-cart"></i> Comprar</a>
+        <a href="pagina4.html"><i class="fas fa-bars"></i> Menú</a>
+    </nav>
+
+    <h1><i class="fas fa-map-marker-alt"></i> Estamos en toda Guatemala</h1>
+
+    <hr>
+
+    <h2><i class="fas fa-search-location"></i> Busca tu tienda más cercana</h2>
+
+    <form action="">
+        <input type="text" placeholder="Ej: Mazate, Petén...">
+        <button><i class="fas fa-search"></i> Buscar</button>
+    </form>
+
+    <br><br>
+
+    <h2><i class="fas fa-store"></i> Sucursales</h2>
+    <img src="sucursalreu.jpg" alt="Sucursal Reu">
+
+    <br><br>
+
+    <h2><i class="fas fa-map-pin"></i> Mazate</h2>
+    <img src="sucursal1.jpg" alt="Sucursal Mazate">
+
+    <br><br>
+
+    <h2><i class="fas fa-map-pin"></i> Retalhuleu</h2>
+    <img src="sucursal3.jpg" alt="Sucursal Retalhuleu">
+
+    <br><br>
+    <hr>
+    <br>
+
+    <h2><i class="fas fa-store-alt"></i> Otras Tiendas</h2>
+    <ol>
+        <li><i class="fas fa-map-marker-alt"></i> Petén</li>
+        <li><i class="fas fa-map-marker-alt"></i> Jutiapa</li>
+        <li><i class="fas fa-map-marker-alt"></i> Antigua</li>
+        <li><i class="fas fa-map-marker-alt"></i> Zacapa</li>
+    </ol>
+
+</body>
+</html>
