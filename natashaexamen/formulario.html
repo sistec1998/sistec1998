@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease;
+        }
+
+        center {
+            padding: 40px;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        h1, h2 {
+            color: #00ffff;
+            transition: color 0.3s ease;
+        }
+
+        form {
+            background-color: #111;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+            transition: box-shadow 0.3s ease;
+            display: inline-block;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 80%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:focus {
+            background-color: #222;
+            box-shadow: 0 0 8px #00ffff;
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            background-color: #00ffff;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #00cccc;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <img src="imagen.png" alt="Imagen del producto">
+        <h1>COMPRAR EN LÍNEA</h1>
+        <form>
+            <h2>Nombre completo del cliente</h2>
+            <input type="text" required>
+            <h2>Dirección</h2>
+            <input type="text" required>
+            <h2>Teléfono</h2>
+            <input type="number" required>
+            <h2>Producto que desea comprar</h2>
+            <input type="text" required><br><br>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </center>
+</body>
+</html>

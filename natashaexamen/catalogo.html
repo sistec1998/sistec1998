@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        img {
+            transition: transform 0.5s ease, opacity 0.5s ease;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        details {
+            margin-bottom: 30px;
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 0.5s ease;
+        }
+
+        details:hover {
+            background-color: #333;
+        }
+
+        h1, h2 {
+            color: #ffcc00;
+        }
+
+        .animated-img {
+            position: relative;
+            animation: moveRight 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes moveRight {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="imagen.png" width="200" class="animated-img">
+    <h1>CATÁLOGO DE PRODUCTOS</h1>
+
+    <details>
+        <summary><h2>Galletas Bimbo</h2></summary>
+        <img src="imagen 7.png" width="300">
+        <img src="imagen 1.png" width="300">
+        <img src="imagen 4.png" width="300">
+    </details>
+
+    <details>
+        <summary><h2>Panes Bimbo</h2></summary>
+        <img src="imagen 2.png" width="300">
+        <img src="imagen 8.png" width="300">
+        <img src="imagen 9.webp" width="300">
+    </details>
+
+    <details>
+        <summary><h2>Chocolates Bimbo</h2></summary>
+        <img src="img 1.webp" width="300">
+        <img src="img 2.jpg" width="300">
+        <img src="img.png" width="300">
+    </details>
+</body>
+</html>
